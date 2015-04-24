@@ -1,0 +1,5 @@
+{
+    "shell_cmd": "ccl --load $file",
+    "working_dir": "${project_path:${folder:${file_path}}}",
+    "selector": "source.lisp"
+}

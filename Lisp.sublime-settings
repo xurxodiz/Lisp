@@ -1,0 +1,5 @@
+{
+    "selector": "source.lisp",
+    "extensions": ["lisp", "lsp", "asd", "scm", "ss", "cl"],
+    "word_separators": "\\()\"',;@$%^&|[]{}`~"
+}
