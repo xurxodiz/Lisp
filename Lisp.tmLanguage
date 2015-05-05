@@ -949,11 +949,21 @@
 					<key>match</key>
 					<string>(?xi:
 								(?&lt;=[()\s]|^)
-								( for | in | to | from | with | while | if | then | else | return | return-from | case | and | do | dotimes | dolist | when | unless | finally | repeat | named | collect | into | loop | let | let\* | progn | as | &lt; | = | &gt; | /= | &lt;= | &gt;= )
+								( for | while | if | then | else | case | do | dotimes | dolist | finally | loop | let | let\* | progn )
 								(?=[()\s]|$)
 							)</string>
 					<key>name</key>
 					<string>keyword.control.lisp</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?xi:
+								(?&lt;=[()\s]|^)
+								( in | to | from | with | return | return-from | and | when | unless | repeat | named | collect | into | as | &lt; | = | &gt; | /= | &lt;= | &gt;= )
+								(?=[()\s]|$)
+							)</string>
+					<key>name</key>
+					<string>keyword.operator.logical.lisp</string>
 				</dict>
 				<dict>
 					<key>match</key>
