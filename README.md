@@ -4,4 +4,4 @@ Includes:
 - build systems for SBCL and Clozure CL
 - minor sensible settings for Lisp files
 - default comment syntax in `#||` and `||#` shape (for Emacs compatibility)
-- revamped Lisp language scoping covering more syntax (originally based on [baskerville's](https://github.com/baskerville/Common-Lisp.tmbundle) for TextMate)
+- revamped Lisp language scoping covering more syntax (originally based on [baskerville's](https://github.com/baskerville/Common-Lisp.tmbundle) for TextMate), designed to be used with [jrgdiz's Cool-Graal theme](http://github.com/jrgdiz/Cool-Graal)
