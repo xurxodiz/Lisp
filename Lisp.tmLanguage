@@ -387,6 +387,42 @@
 				</dict>
 				<dict>
 					<key>begin</key>
+					<string>(?&lt;=\()(lambda)\s+(\()</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.variable.lisp</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.list.begin.lisp</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.list.end.lisp</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.lambda.lisp</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#parameter</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
 					<string>"</string>
 					<key>beginCaptures</key>
 					<dict>
@@ -974,16 +1010,6 @@
 							)</string>
 					<key>name</key>
 					<string>keyword.operator.arithmetic.lisp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?xi:
-								(?&lt;=[()\s]|^)
-								( lambda )
-								(?=[()\s]|$)
-							)</string>
-					<key>name</key>
-					<string>storage.type.variable.lisp</string>
 				</dict>
 				<dict>
 					<key>match</key>
