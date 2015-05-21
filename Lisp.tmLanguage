@@ -878,6 +878,11 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
+							<string>variable.other.special.lisp</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
 							<string>variable.other.lisp</string>
 						</dict>
 					</dict>
@@ -886,7 +891,10 @@
                                  (?&lt;=\(|\#')
                                  ( defvar | defconstant | defparameter )
                                  \s+
-                                 ( [^\s()]+ )
+                                 (?:
+                                 	( \*[^\s()]+\* )
+                                 	| ( [^\s()]+ )
+                                 )
                               )</string>
 					<key>name</key>
 					<string>meta.storage.type.variable.lisp</string>
