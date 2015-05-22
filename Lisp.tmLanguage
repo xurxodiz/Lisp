@@ -431,7 +431,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.function.lisp</string>
+							<string>storage.type.macro.lisp</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -472,7 +472,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.function.lisp</string>
+							<string>storage.type.type.lisp</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -513,7 +513,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.function.lisp</string>
+							<string>storage.type.method.lisp</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -559,7 +559,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.variable.lisp</string>
+							<string>storage.type.lambda.lisp</string>
 						</dict>
 						<key>2</key>
 						<dict>
