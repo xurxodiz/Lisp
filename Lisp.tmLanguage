@@ -40,7 +40,7 @@
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>fun-parameter</key>
+		<key>lambda-list-parameter</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -419,7 +419,7 @@
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#fun-parameter</string>
+							<string>#lambda-list-parameter</string>
 						</dict>
 					</array>
 				</dict>
@@ -460,7 +460,7 @@
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#fun-parameter</string>
+							<string>#lambda-list-parameter</string>
 						</dict>
 					</array>
 				</dict>
@@ -501,7 +501,7 @@
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#fun-parameter</string>
+							<string>#lambda-list-parameter</string>
 						</dict>
 					</array>
 				</dict>
@@ -583,7 +583,7 @@
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#fun-parameter</string>
+							<string>#lambda-list-parameter</string>
 						</dict>
 					</array>
 				</dict>
