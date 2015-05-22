@@ -894,7 +894,6 @@
 				<dict>
 					<key>match</key>
 					<string>(?xi:
-
     				                (?&lt;=[()\s]|^)
     				                [+-]?
     				                (
