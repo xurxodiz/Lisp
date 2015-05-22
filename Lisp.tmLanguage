@@ -518,7 +518,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.function.lisp</string>
+							<string>entity.name.method.lisp</string>
 						</dict>
 						<key>3</key>
 						<dict>
