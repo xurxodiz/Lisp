@@ -83,6 +83,17 @@
 			<key>name</key>
 			<string>storage.modifier.function.lisp</string>
 		</dict>
+		<key>superclass</key>
+		<dict>
+			<key>match</key>
+			<string>(?xi:
+				        (?&lt;=[()\s]|^)
+				        ( [^()\s)]+ )
+				        (?=[()\s]|$)
+				     )</string>
+			<key>name</key>
+			<string>entity.name.class.super.lisp</string>
+		</dict>
 		<key>parameter-single</key>
 		<dict>
 			<key>match</key>
@@ -382,6 +393,47 @@
 		<dict>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>begin</key>
+					<string>(?&lt;=\()(defclass)\s+([^\s()]+)\s+(\()</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.class.lisp</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.class.lisp</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.list.begin.lisp</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.list.end.lisp</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.defclass.lisp</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#superclass</string>
+						</dict>
+					</array>
+				</dict>
 				<dict>
 					<key>begin</key>
 					<string>(?&lt;=\()(defun)\s+([^\s()]+)\s+(\()</string>
@@ -980,30 +1032,6 @@
                               )</string>
 					<key>name</key>
 					<string>meta.storage.type.variable.lisp</string>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.class.lisp</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.class.lisp</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(?xi:
-                                 (?&lt;=\(|\#')
-                                 ( defclass )
-                                 \s+
-                                 ( [^\s()]+ )
-                              )</string>
-					<key>name</key>
-					<string>meta.storage.type.class.lisp</string>
 				</dict>
 				<dict>
 					<key>captures</key>
