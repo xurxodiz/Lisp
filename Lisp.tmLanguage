@@ -330,7 +330,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defun.lisp</string>
+					<string>meta.list.defun.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -366,7 +366,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defun.signature.lisp</string>
+					<string>meta.list.signature.defun.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -402,7 +402,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defclass.lisp</string>
+					<string>meta.list.defclass.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -438,7 +438,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defclass.signature.lisp</string>
+					<string>meta.list.signature.defclass.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -474,7 +474,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defmacro.lisp</string>
+					<string>meta.list.defmacro.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -510,7 +510,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defmacro.signature.lisp</string>
+					<string>meta.list.signature.defmacro.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -546,7 +546,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.deftype.lisp</string>
+					<string>meta.list.deftype.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -582,7 +582,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.deftype.signature.lisp</string>
+					<string>meta.list.signature.deftype.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -618,7 +618,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defmethod.lisp</string>
+					<string>meta.list.defmethod.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -659,7 +659,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defmethod.signature.lisp</string>
+					<string>meta.list.signature.defmethod.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
