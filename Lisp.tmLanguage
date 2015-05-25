@@ -70,6 +70,10 @@
 					<key>include</key>
 					<string>#parameter-with-type</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#parameter-with-predicate</string>
+				</dict>
 			</array>
 		</dict>
 		<key>parameter-option</key>
@@ -173,6 +177,43 @@
 				        ( [^()\s)]+ )
 				        (\))
 				     )</string>
+		</dict>
+		<key>parameter-with-predicate</key>
+		<dict>
+			<key>begin</key>
+			<string>(\()([^\s()]+)\s+</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.list.begin.lisp</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.list.end.lisp</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.variable.parameter.with-predicate.lisp</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
 		</dict>
 		<key>atom</key>
 		<dict>
