@@ -136,6 +136,8 @@
 					<string>punctuation.definition.list.end.lisp</string>
 				</dict>
 			</dict>
+			<key>name</key>
+			<string>meta.variable.parameter.with-default.lisp</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -169,6 +171,8 @@
 					<string>punctuation.definition.list.end.lisp</string>
 				</dict>
 			</dict>
+			<key>name</key>
+			<string>meta.variable.parameter.with-type.lisp</string>
 			<key>match</key>
 			<string>(?xi:
 				        (\()
