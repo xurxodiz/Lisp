@@ -668,6 +668,55 @@
 						</dict>
 					</array>
 				</dict>
+
+
+				<dict>
+					<key>begin</key>
+					<string>(\()(defvar|defconstant|defparameter)\s+(?:([^\s()]+)|(\*[^\s()]+\*))\s+</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.list.begin.lisp</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.variable.lisp</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>variable.other.lisp</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>variable.other.special.lisp</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.list.end.lisp</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.list.defvar.lisp</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+
 				<dict>
 					<key>begin</key>
 					<string>(?&lt;=[^'`,]|^)\(</string>
@@ -1209,38 +1258,6 @@
         				    )</string>
 					<key>name</key>
 					<string>constant.language.lisp</string>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.variable.lisp</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>variable.other.special.lisp</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>variable.other.lisp</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(?xi:
-                                 (?&lt;=\(|\#')
-                                 ( defvar | defconstant | defparameter )
-                                 \s+
-                                 (?:
-                                 	( \*[^\s()]+\* )
-                                 	| ( [^\s()]+ )
-                                 )
-                              )</string>
-					<key>name</key>
-					<string>meta.storage.type.variable.lisp</string>
 				</dict>
 				<dict>
 					<key>captures</key>
