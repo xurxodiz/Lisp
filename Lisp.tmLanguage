@@ -147,21 +147,31 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter</string>
+					<string>punctuation.definition.list.begin.lisp</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>variable.parameter</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
 					<string>entity.name.type.lisp</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.list.end.lisp</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(?xi:
-				        \(
+				        (\()
 				        ( [^()\s)]+ )
 				        \s+
 				        ( [^()\s)]+ )
-				        \)
+				        (\))
 				     )</string>
 		</dict>
 		<key>atom</key>
