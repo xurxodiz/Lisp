@@ -604,7 +604,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.defmethod.lisp</string>
+					<string>meta.defmethod.signature.lisp</string>
 					<key>patterns</key>
 					<array>
 						<dict>
