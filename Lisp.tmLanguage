@@ -668,8 +668,6 @@
 						</dict>
 					</array>
 				</dict>
-
-
 				<dict>
 					<key>begin</key>
 					<string>(\()(defvar|defconstant|defparameter)\s+(?:(\*[^\s()]+\*)|([^\s()]+))\s+</string>
