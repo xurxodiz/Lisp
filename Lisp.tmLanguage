@@ -672,7 +672,7 @@
 
 				<dict>
 					<key>begin</key>
-					<string>(\()(defvar|defconstant|defparameter)\s+(?:([^\s()]+)|(\*[^\s()]+\*))\s+</string>
+					<string>(\()(defvar|defconstant|defparameter)\s+(?:(\*[^\s()]+\*)|([^\s()]+))\s+</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -688,12 +688,12 @@
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>variable.other.lisp</string>
+							<string>variable.other.special.lisp</string>
 						</dict>
 						<key>4</key>
 						<dict>
 							<key>name</key>
-							<string>variable.other.special.lisp</string>
+							<string>variable.other.lisp</string>
 						</dict>
 					</dict>
 					<key>end</key>
