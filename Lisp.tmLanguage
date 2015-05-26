@@ -82,6 +82,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#string</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#comment</string>
 				</dict>
 				<dict>
@@ -304,6 +308,10 @@
 				<dict>
 					<key>include</key>
 					<string>#symbol</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1032,7 +1040,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>misc</key>
+		<key>string</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -1079,6 +1087,12 @@
 						</dict>
 					</array>
 				</dict>
+			</array>
+		</dict>
+		<key>misc</key>
+		<dict>
+			<key>patterns</key>
+			<array>
 				<dict>
 					<key>begin</key>
 					<string>\|</string>
