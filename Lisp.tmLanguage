@@ -76,6 +76,32 @@
 				</dict>
 			</array>
 		</dict>
+		<key>struct-parameter</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#comment</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#struct-name</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#struct-name-with-options</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#parameter-single</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#parameter-with-default</string>
+				</dict>
+			</array>
+		</dict>
 		<key>parameter-option</key>
 		<dict>
 			<key>match</key>
@@ -86,6 +112,54 @@
 				     )</string>
 			<key>name</key>
 			<string>storage.modifier.function.lisp</string>
+		</dict>
+		<key>struct-name</key>
+		<dict>
+			<key>match</key>
+			<string>(?xi:
+				        (?&lt;=defstruct\s)
+				        ( [^()\s]+ )
+				        (?=[()\s]|$)
+				     )</string>
+			<key>name</key>
+			<string>entity.name.structure.lisp</string>
+		</dict>
+		<key>struct-name-with-options</key>
+		<dict>
+			<key>begin</key>
+			<string>(?&lt;=defstruct\s)(\()([^\s()]+)\s+</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.list.begin.lisp</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.structure.lisp</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.list.end.lisp</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.struct-name.lisp</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
 		</dict>
 		<key>superclass</key>
 		<dict>
@@ -783,6 +857,42 @@
 				</dict>
 				<dict>
 					<key>begin</key>
+					<string>(\()(defstruct)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.list.begin.lisp</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.defstruct.lisp</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.list.end.lisp</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.list.defstruct.lisp</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#struct-parameter</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
 					<string>(?&lt;=[^'`,]|^)\(</string>
 					<key>beginCaptures</key>
 					<dict>
@@ -1286,49 +1396,6 @@
         				    )</string>
 					<key>name</key>
 					<string>constant.language.lisp</string>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.structure.lisp</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.structure.lisp</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(?xi:
-                                 (?&lt;=\(|\#')
-                                 ( defstruct )
-                                 \s+
-                                 ( [^\s()]+ )
-                              )</string>
-					<key>name</key>
-					<string>meta.storage.type.class.lisp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?xi:
-                                 (?&lt;=\(|\#')
-                                 ( defstruct )
-                                 (?=\s\()
-                              )</string>
-					<key>name</key>
-					<string>storage.type.structure.lisp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?xi:
-                                 (?&lt;=\(defstruct\s\()
-                                 ( [^\s()]+ )
-                              )</string>
-					<key>name</key>
-					<string>entity.name.structure.structure.lisp</string>
 				</dict>
 				<dict>
 					<key>match</key>
