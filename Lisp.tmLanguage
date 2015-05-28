@@ -1463,21 +1463,11 @@
 					<key>match</key>
 					<string>(?xi:
 								(?&lt;=[()\s]|^)
-								( for | while | if | then | else | case | do | do\* | dolist | finally | loop | let | let\* | prog | prog\* | progn | prog1 | prog2 | progv )
+								( in | to | from | with | return | return-from | and | when | unless | repeat | named | collect | into | as | &lt; | = | &gt; | /= | &lt;= | &gt;= | for | while | if | then | else | case | do | do\* | dolist | finally | loop | let | let\* | prog | prog\* | progn | prog1 | prog2 | progv )
 								(?=[()\s]|$)
 							)</string>
 					<key>name</key>
 					<string>keyword.control.lisp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?xi:
-								(?&lt;=[()\s]|^)
-								( in | to | from | with | return | return-from | and | when | unless | repeat | named | collect | into | as | &lt; | = | &gt; | /= | &lt;= | &gt;= )
-								(?=[()\s]|$)
-							)</string>
-					<key>name</key>
-					<string>keyword.operator.logical.lisp</string>
 				</dict>
 				<dict>
 					<key>match</key>
