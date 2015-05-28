@@ -1457,7 +1457,7 @@
                                  (?=[()\s])
                               )</string>
 					<key>name</key>
-					<string>keyword.other.function.predicate.lisp</string>
+					<string>keyword.operator.logical.lisp</string>
 				</dict>
 				<dict>
 					<key>match</key>
