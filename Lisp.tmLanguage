@@ -1463,7 +1463,7 @@
 					<key>match</key>
 					<string>(?xi:
 								(?&lt;=[()\s]|^)
-								( in | to | from | with | return | return-from | and | when | unless | repeat | named | collect | into | as | &lt; | = | &gt; | /= | &lt;= | &gt;= | for | while | if | then | else | case | do | do\* | dolist | finally | loop | let | let\* | prog | prog\* | progn | prog1 | prog2 | progv )
+								( &lt; | = | &gt; | /= | &lt;= | &gt;= | as | if | in | do | do\* | to | and | for | let | let\* | sum | case | else | from | into | loop | then | prog | prog\* | progn | prog1 | prog2 | progv | when | with | count | nconc | named | never | until | while | always | append | dolist | repeat | return | unless | collect | finally | summing | thereis | counting | maximize | minimize | nconcing | appending | initially | collecting | maximizing | minimizing | loop-finish | return-from )
 								(?=[()\s]|$)
 							)</string>
 					<key>name</key>
