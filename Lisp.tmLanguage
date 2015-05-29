@@ -1185,7 +1185,7 @@
 					<key>match</key>
 					<string>(?x:
 	                            (?&lt;=[()\s]|^)
-        				        ( \#[+-] )
+        				        ( \#[+-][^\s()]+ )
         				     )</string>
 					<key>name</key>
 					<string>keyword.other.read-time.conditional.lisp</string>
