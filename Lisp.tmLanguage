@@ -64,6 +64,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#parameter-option</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#parameter-single</string>
 				</dict>
 				<dict>
