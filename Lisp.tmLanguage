@@ -391,7 +391,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(\()(defun)</string>
+					<string>(\()(defun[*]?)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -427,7 +427,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?&lt;=defun)\s+([^\s()]+)\s*(\()</string>
+					<string>(?&lt;=(?:(?:defun)|(?:defun\*)))\s+([^\s()]+)\s*(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -679,7 +679,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(\()(defmethod|defgeneric)</string>
+					<string>(\()(defmethod[*]?|defgeneric[*]?)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -715,7 +715,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?&lt;=(?:defmethod|defgeneric))\s+([^\s()]+)\s+(?:(:before|:after|:around)\s+)?(\()</string>
+					<string>(?&lt;=(?:defmethod[*]|defmethod|defgeneric[*]|defgeneric))\s+([^\s()]+)\s+(?:(:before|:after|:around)\s+)?(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
